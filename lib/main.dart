@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +13,22 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
+      home: MyPackage(),
+    );
+  }
+}
+
+class MyPackage extends StatefulWidget {
+  const MyPackage({ Key? key }) : super(key: key);
+
+  @override
+  State<MyPackage> createState() => _MyPackageState();
+}
+
+class _MyPackageState extends State<MyPackage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
         appBar: AppBar(
           title: Image.asset(
           "assets/white.png",
@@ -23,7 +39,6 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.black,
           centerTitle: true
         ),
-      ),
-    );
+      );
   }
 }
