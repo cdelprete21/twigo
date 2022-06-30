@@ -16,6 +16,10 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('Twigo'),
         ),
+        body: Center(
+          child: Text("CIao bellissimo"),
+        ),
+        
       ),
     );
   }
