@@ -14,13 +14,15 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Twigo'),
+          title: Image.asset(
+          "assets/white.png",
+          fit: BoxFit.contain,
+          height: 60,
+    ),
+          toolbarHeight: 75,
           backgroundColor: Colors.black,
+          centerTitle: true
         ),
-        body: Center(
-          child: Text("Ciao bellissimo"),
-        ),
-        
       ),
     );
   }
