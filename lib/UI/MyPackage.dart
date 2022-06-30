@@ -45,23 +45,50 @@ class _MyPackageState extends State<MyPackage> {
             activeColor: Colors.white,
             textAlign: TextAlign.center,
           ),
+          BottomNavyBarItem(
+            icon:
+                Image.asset(
+                "assets/prodottivenduti.png",
+                width: 30,
+                height: 30,
+                ),
+            title: Text('Venduti'),
+            inactiveColor: Colors.orange,
+            activeColor: Colors.white,
+            textAlign: TextAlign.center,
+          ),
            BottomNavyBarItem(
-            icon: Icon(Icons.apps),
+            icon:
+                Image.asset(
+                "assets/link.png",
+                width: 30,
+                height: 30,
+                ),
             title: Text('Link'),
             inactiveColor: Colors.orange,
             activeColor: Colors.white,
             textAlign: TextAlign.center,
           ),
            BottomNavyBarItem(
-            icon: Icon(Icons.apps),
-            title: Text('Impostazioni'),
+            icon:
+                Image.asset(
+                "assets/artisti.png",
+                width: 30,
+                height: 30,
+                ),
+            title: Text('Gestione Account'),
             inactiveColor: Colors.orange,
             activeColor: Colors.white,
             textAlign: TextAlign.center,
           ),
            BottomNavyBarItem(
-            icon: Icon(Icons.apps),
-            title: Text('Gestione Account'),
+            icon:
+                Image.asset(
+                "assets/impostazioni.png",
+                width: 30,
+                height: 30,
+                ),
+            title: Text('Impostazioni'),
             inactiveColor: Colors.orange,
             activeColor: Colors.white,
             textAlign: TextAlign.center,
