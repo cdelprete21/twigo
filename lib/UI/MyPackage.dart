@@ -1,3 +1,10 @@
+import 'dart:io';
+
+import 'package:Twigo/UI/pagine/Gestione.dart';
+import 'package:Twigo/UI/pagine/Impostazioni.dart';
+import 'package:Twigo/UI/pagine/LinkPage.dart';
+import 'package:Twigo/UI/pagine/Prodotti.dart';
+import 'package:Twigo/UI/pagine/Venduti.dart';
 import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 import 'package:flutter/material.dart';
 
@@ -10,6 +17,15 @@ class MyPackage extends StatefulWidget {
 
 class _MyPackageState extends State<MyPackage> {
   int currentIndex = 0;
+  final screens = [
+    Prodotti(),
+    Venduti(),
+    LinkPage(),
+    Gestione(),
+    Impostazioni(),
+  ];
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,12 +34,14 @@ class _MyPackageState extends State<MyPackage> {
           title: Image.asset(
           "assets/white.png",
           fit: BoxFit.contain,
-          height: 60,
+          height: 50,
+          width: 90,
     ),
-          toolbarHeight: 75,
+          toolbarHeight: 70,
           backgroundColor: Colors.black,
           centerTitle: true,
         ),
+        body: screens[currentIndex],
         bottomNavigationBar: BottomNavyBar(
           backgroundColor: Colors.black,
           selectedIndex: currentIndex,
@@ -94,7 +112,7 @@ class _MyPackageState extends State<MyPackage> {
             textAlign: TextAlign.center,
           ),
           ],
-          )
+          ),
       );
   }
 }
