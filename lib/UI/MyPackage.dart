@@ -4,7 +4,7 @@ import 'package:Twigo/UI/pagine/Gestione.dart';
 import 'package:Twigo/UI/pagine/Impostazioni.dart';
 import 'package:Twigo/UI/pagine/LinkPage.dart';
 import 'package:Twigo/UI/pagine/Prodotti.dart';
-import 'package:Twigo/UI/pagine/Venduti.dart';
+import 'package:Twigo/UI/pagine/Home.dart';
 import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 import 'package:flutter/material.dart';
 
@@ -16,10 +16,11 @@ class MyPackage extends StatefulWidget {
 }
 
 class _MyPackageState extends State<MyPackage> {
+  
   int currentIndex = 0;
   final screens = [
+    Home(),
     Prodotti(),
-    Venduti(),
     LinkPage(),
     Gestione(),
     Impostazioni(),
@@ -29,6 +30,7 @@ class _MyPackageState extends State<MyPackage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        
         backgroundColor: Colors.black,
         appBar: AppBar(
           title: Image.asset(
@@ -51,6 +53,18 @@ class _MyPackageState extends State<MyPackage> {
             });
           },
           items: <BottomNavyBarItem>[
+          BottomNavyBarItem(
+            icon:
+                Image.asset(
+                "assets/white logo.png",
+                width: 30,
+                height: 30,
+                ),
+            title: Text('Home'),
+            inactiveColor: Colors.orange,
+            activeColor: Colors.white,
+            textAlign: TextAlign.center,
+          ),
            BottomNavyBarItem(
             icon: 
               Image.asset(
@@ -59,18 +73,6 @@ class _MyPackageState extends State<MyPackage> {
                 height: 30,
                 ),
             title: Text('Prodotti'),
-            inactiveColor: Colors.orange,
-            activeColor: Colors.white,
-            textAlign: TextAlign.center,
-          ),
-          BottomNavyBarItem(
-            icon:
-                Image.asset(
-                "assets/prodottivenduti.png",
-                width: 30,
-                height: 30,
-                ),
-            title: Text('Venduti'),
             inactiveColor: Colors.orange,
             activeColor: Colors.white,
             textAlign: TextAlign.center,
