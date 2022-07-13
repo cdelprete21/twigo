@@ -40,21 +40,37 @@ class _SiumState extends State<Sium> {
         mainAxisSpacing: 10,
         crossAxisCount: 1,
         children: <Widget>[
-
           Container(
             padding: const EdgeInsets.all(8),
             color: Colors.grey[800],
-            child: const Text('Who scream'),
+            width: 500,
+            height: 500,
+            child: const Text('SALDO DISPONIBILE',
+                   style: TextStyle(
+                    fontSize: 24,
+                    color: Colors.amber
+                   ),
+                  ),
           ),
           Container(
             padding: const EdgeInsets.all(8),
             color: Colors.grey[800],
-            child: const Text('Revolution is coming...'),
+            child: const Text('PROFITTO MENSILE',
+                   style: TextStyle(
+                    fontSize: 24,
+                    color: Colors.amber
+                   ),
+                  ),
           ),
           Container(
             padding: const EdgeInsets.all(8),
             color: Colors.grey[800],
-            child: const Text('Revolution, they...'),
+            child: const Text('VISUALIZZAZIONI MENSILI',
+                   style: TextStyle(
+                    fontSize: 24,
+                    color: Colors.amber
+                   ),
+                  ),
           ),
         ],
       ),
