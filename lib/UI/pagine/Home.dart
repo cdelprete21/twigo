@@ -13,6 +13,7 @@ class _HomeState extends State<Home> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        backgroundColor: Colors.black,
         body: const Sium(),
       ),
     );
@@ -39,19 +40,20 @@ class _SiumState extends State<Sium> {
         mainAxisSpacing: 10,
         crossAxisCount: 1,
         children: <Widget>[
+
           Container(
             padding: const EdgeInsets.all(8),
-            color: Colors.green[400],
+            color: Colors.grey[800],
             child: const Text('Who scream'),
           ),
           Container(
             padding: const EdgeInsets.all(8),
-            color: Colors.green[500],
+            color: Colors.grey[800],
             child: const Text('Revolution is coming...'),
           ),
           Container(
             padding: const EdgeInsets.all(8),
-            color: Colors.green[600],
+            color: Colors.grey[800],
             child: const Text('Revolution, they...'),
           ),
         ],
@@ -59,6 +61,7 @@ class _SiumState extends State<Sium> {
     ),
   ],
 )
+
     );
   }
 }

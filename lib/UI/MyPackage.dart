@@ -30,7 +30,6 @@ class _MyPackageState extends State<MyPackage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        
         backgroundColor: Colors.black,
         appBar: AppBar(
           title: Image.asset(
@@ -61,7 +60,6 @@ class _MyPackageState extends State<MyPackage> {
                 height: 30,
                 ),
             title: Text('Home'),
-            inactiveColor: Colors.orange,
             activeColor: Colors.white,
             textAlign: TextAlign.center,
           ),
