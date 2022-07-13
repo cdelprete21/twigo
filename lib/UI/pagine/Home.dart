@@ -30,21 +30,11 @@ class _SiumState extends State<Sium> {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: CustomScrollView(
-  primary: false,
-  slivers: <Widget>[
-    SliverPadding(
-      padding: const EdgeInsets.all(20),
-      sliver: SliverGrid.count(
-        crossAxisSpacing: 10,
-        mainAxisSpacing: 10,
-        crossAxisCount: 1,
-        children: <Widget>[
-          Container(
+          child: Container(
             padding: const EdgeInsets.all(8),
             color: Colors.grey[800],
-            width: 500,
-            height: 500,
+            width: 350,
+            height: 200,
             child: const Text('SALDO DISPONIBILE',
                    style: TextStyle(
                     fontSize: 24,
@@ -52,7 +42,7 @@ class _SiumState extends State<Sium> {
                    ),
                   ),
           ),
-          Container(
+          /*Container(
             padding: const EdgeInsets.all(8),
             color: Colors.grey[800],
             child: const Text('PROFITTO MENSILE',
@@ -72,12 +62,7 @@ class _SiumState extends State<Sium> {
                    ),
                   ),
           ),
-        ],
-      ),
-    ),
-  ],
-)
-
-    );
+*/
+      );
   }
 }
