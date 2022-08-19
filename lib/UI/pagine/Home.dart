@@ -26,6 +26,7 @@ class Sium extends StatefulWidget {
   @override
   State<Sium> createState() => _SiumState();
 }
+
 class _SiumState extends State<Sium> {
   @override
   Widget build(BuildContext context) {
@@ -34,7 +35,7 @@ class _SiumState extends State<Sium> {
             padding: const EdgeInsets.all(8),
             color: Colors.grey[800],
             width: 350,
-            height: 200,
+            height: 150,
             child: Column(
               children: <Widget>[
                 const Text('SALDO DISPONIBILE',
@@ -60,8 +61,8 @@ class _SiumState extends State<Sium> {
                         TextSpan(
                           text: "0,00 €".toUpperCase(),
                           style: TextStyle(
-                            fontSize: 24,
-                            color: Colors.white
+                            fontSize: 40,
+                            color: Colors.white,
                           )
                         ),
                       ],
@@ -70,7 +71,7 @@ class _SiumState extends State<Sium> {
                     ],
                   ),
                 ),
-              ]
+              ],
             ),
           ),
           /*Container(
