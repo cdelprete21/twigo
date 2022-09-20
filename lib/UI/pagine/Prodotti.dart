@@ -37,7 +37,7 @@ class _ProdottiState extends State<Prodotti> {
           ),
         );
       },
-      duration: const Duration(milliseconds: 300),
+      duration: const Duration(milliseconds: 700),
     );
     _items.removeAt(index);
   }

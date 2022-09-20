@@ -26,11 +26,11 @@ class _MyPackageState extends State<MyPackage> {
     Impostazioni(),
   ];
 
-
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.white,
         appBar: AppBar(
           title: Image.asset(
           "assets/white.png",
