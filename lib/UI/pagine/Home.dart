@@ -36,7 +36,7 @@ class _SiumState extends State<Sium> {
             color: Colors.grey[800],
             width: 350,
             height: 150,
-            child: Column(
+            child: Column(/*
               children: <Widget>[
                 const Text('SALDO DISPONIBILE',
                    style: TextStyle(
@@ -68,33 +68,9 @@ class _SiumState extends State<Sium> {
                       ],
                         ),
                       ),
-                    ],
+                    ],*/
                   ),
                 ),
-              ],
-            ),
-          ),
-          /*Container(
-            padding: const EdgeInsets.all(8),
-            color: Colors.grey[800],
-            child: const Text('PROFITTO MENSILE',
-                   style: TextStyle(
-                    fontSize: 24,
-                    color: Colors.amber
-                   ),
-                  ),
-          ),
-          Container(
-            padding: const EdgeInsets.all(8),
-            color: Colors.grey[800],
-            child: const Text('VISUALIZZAZIONI MENSILI',
-                   style: TextStyle(
-                    fontSize: 24,
-                    color: Colors.amber
-                   ),
-                  ),
-          ),
-*/
       );
   }
 }
