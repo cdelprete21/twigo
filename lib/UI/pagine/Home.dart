@@ -30,47 +30,34 @@ class Sium extends StatefulWidget {
 class _SiumState extends State<Sium> {
   @override
   Widget build(BuildContext context) {
-    return Center(
+    return Column(
+      children: [
+        Flexible(
           child: Container(
-            padding: const EdgeInsets.all(8),
-            color: Colors.grey[800],
-            width: 350,
-            height: 150,
-            child: Column(/*
-              children: <Widget>[
-                const Text('SALDO DISPONIBILE',
-                   style: TextStyle(
-                    fontSize: 24,
-                    color: Colors.amber
-                   ),
-                  ),
-                  Container(
-                    padding: EdgeInsets.all(1),
-                    decoration: BoxDecoration(
-                      color: Colors.grey[600],
-                      boxShadow: [
-                        BoxShadow(
-                        offset: Offset(0, 10),
-                        blurRadius: 50,
-                        ),
-                      ],
-                    ),
-                  child: Row(
-                    children: <Widget>[RichText(text: TextSpan(
-                      children: [
-                        TextSpan(
-                          text: "0,00 €".toUpperCase(),
-                          style: TextStyle(
-                            fontSize: 40,
-                            color: Colors.white,
-                          )
-                        ),
-                      ],
-                        ),
-                      ),
-                    ],*/
-                  ),
-                ),
-      );
+            height: 200,
+            color: Colors.blue,
+          ),
+        ),
+        Flexible(
+          child: Container(
+            height: 200,
+            color: Colors.yellow,
+          ),
+        ),
+        Flexible(
+          child: Container(
+            height: 200,
+            color: Colors.red,
+          ),
+        ),
+      ],
+    );
   }
 }
+/* Container(
+        padding: const EdgeInsets.all(8.0),
+        color: Colors.grey,
+        alignment: Alignment.center,
+        child: const Text('Saldo disponibile'),
+        constraints: const BoxConstraints.expand(height: 200),
+      );*/
