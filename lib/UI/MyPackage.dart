@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:Twigo/UI/pagine/Gestione.dart';
+import 'package:Twigo/UI/pagine/Profilo.dart';
 import 'package:Twigo/UI/pagine/Impostazioni.dart';
 import 'package:Twigo/UI/pagine/LinkPage.dart';
 import 'package:Twigo/UI/pagine/Prodotti.dart';
@@ -22,7 +22,7 @@ class _MyPackageState extends State<MyPackage> {
     Home(),
     Prodotti(),
     LinkPage(),
-    Gestione(),
+    Profilo(),
     Impostazioni(),
   ];
 
@@ -94,7 +94,7 @@ class _MyPackageState extends State<MyPackage> {
                 width: 30,
                 height: 30,
                 ),
-            title: Text('Gestione Account'),
+            title: Text('Profilo'),
             inactiveColor: Colors.orange,
             activeColor: Colors.white,
             textAlign: TextAlign.center,
