@@ -32,32 +32,28 @@ class _SiumState extends State<Sium> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Flexible(
+        Padding(
+          padding: const EdgeInsets.all(8.0),
           child: Container(
             height: 200,
-            color: Colors.blue,
+            color: Colors.grey[800],
           ),
         ),
-        Flexible(
+        Padding(
+          padding: const EdgeInsets.all(8.0),
           child: Container(
             height: 200,
-            color: Colors.yellow,
+            color: Colors.grey[800],
           ),
         ),
-        Flexible(
+        Padding(
+          padding: const EdgeInsets.all(8.0),
           child: Container(
             height: 200,
-            color: Colors.red,
+            color: Colors.grey[800],
           ),
         ),
       ],
     );
   }
 }
-/* Container(
-        padding: const EdgeInsets.all(8.0),
-        color: Colors.grey,
-        alignment: Alignment.center,
-        child: const Text('Saldo disponibile'),
-        constraints: const BoxConstraints.expand(height: 200),
-      );*/
