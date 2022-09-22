@@ -36,21 +36,105 @@ class _SiumState extends State<Sium> {
           padding: const EdgeInsets.all(8.0),
           child: Container(
             height: 200,
-            color: Colors.grey[800],
+            width: 400,
+            decoration: BoxDecoration(
+              color: Colors.grey[800],
+              borderRadius: BorderRadius.circular(20)
+            ),
+              child: Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(21, 15, 10, 12),
+                    child: Text(
+                      "SALDO DISPONIBILE",
+                      style: TextStyle(
+                        fontSize: 22,
+                        color: Colors.white70,
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(35),
+                    child: Text(
+                      "0,00€",
+                      style: TextStyle(
+                        fontSize: 45,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
           ),
         ),
         Padding(
           padding: const EdgeInsets.all(8.0),
           child: Container(
             height: 200,
-            color: Colors.grey[800],
+            width: 400,
+            decoration: BoxDecoration(
+              color: Colors.grey[800],
+              borderRadius: BorderRadius.circular(20)
+            ),
+              child: Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(20, 15, 10, 12),
+                    child: Text(
+                      "PROFITTO MENSILE",
+                      style: TextStyle(
+                        fontSize: 22,
+                        color: Colors.white70,
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(35),
+                    child: Text(
+                      "0,00€",
+                      style: TextStyle(
+                        fontSize: 45,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
           ),
         ),
         Padding(
           padding: const EdgeInsets.all(8.0),
           child: Container(
             height: 200,
-            color: Colors.grey[800],
+            width: 400,
+            decoration: BoxDecoration(
+              color: Colors.grey[800],
+              borderRadius: BorderRadius.circular(20)
+            ),
+              child: Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(13, 15, 10, 12),
+                    child: Text(
+                      "VISUALIZZAZIONI MENSILI",
+                      style: TextStyle(
+                        fontSize: 22,
+                        color: Colors.white70,
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(35),
+                    child: Text(
+                      "8",
+                      style: TextStyle(
+                        fontSize: 45,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
           ),
         ),
       ],
