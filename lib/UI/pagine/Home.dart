@@ -56,7 +56,7 @@ class _SiumState extends State<Sium> {
                   Padding(
                     padding: const EdgeInsets.all(35),
                     child: Text(
-                      "0,00€",
+                      "75,00€",
                       style: TextStyle(
                         fontSize: 45,
                         color: Colors.white,
@@ -91,7 +91,7 @@ class _SiumState extends State<Sium> {
                   Padding(
                     padding: const EdgeInsets.all(35),
                     child: Text(
-                      "0,00€",
+                      "300,00€",
                       style: TextStyle(
                         fontSize: 45,
                         color: Colors.white,
@@ -126,7 +126,7 @@ class _SiumState extends State<Sium> {
                   Padding(
                     padding: const EdgeInsets.all(35),
                     child: Text(
-                      "8",
+                      "21",
                       style: TextStyle(
                         fontSize: 45,
                         color: Colors.white,
