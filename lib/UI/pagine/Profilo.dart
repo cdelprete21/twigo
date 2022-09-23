@@ -30,34 +30,71 @@ class Sium extends StatefulWidget {
 class _SiumState extends State<Sium> {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        SizedBox(
-          height : 115,
-          width : 115,
-          child: Stack(
-            fit: StackFit.expand,
-            children: [
-              CircleAvatar(
-                backgroundImage: AssetImage("assets/leD3.png"),
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 20),
+      child: Column(
+        children: [
+          CircleAvatar(
+            radius: 76,
+            backgroundColor: Colors.orange,
+            child: CircleAvatar(
+              radius: 75,
+              backgroundImage: AssetImage("assets/leD3.png"),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 150, vertical: 10),
+            child: FlatButton(
+              color: Colors.orange,
+              height: 30,
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+              onPressed: () {},
+              child: Text(
+                "SEGUI",
+                style: TextStyle(
+                  color: Colors.white,
+                ),
+              ),
+            ),
+          ),
+          TabBar(
+            tabs: [
+              Tab(
+                child: Text(
+                  "ciao",
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),
+                ),
+              ),
+              Tab(
+                child: Text(
+                  "ciao",
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),
+                ),
+              ),
+              Tab(
+                child: Text(
+                  "ciao",
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),
+                ),
+              ),
+              Tab(
+                child: Text(
+                  "ciao",
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),
+                ),
               ),
             ],
           ),
-        ),
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 30),
-          child: FlatButton(
-            padding: EdgeInsets.all(20),
-            color: Colors.grey[500],
-            height: 30,
-            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
-            onPressed: () {},
-            child: Text(
-              "SEGUI"
-            ),
-          ),
-        ),
-      ], 
+        ], 
+      ),
     );
   }
 }
