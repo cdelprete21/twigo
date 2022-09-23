@@ -45,16 +45,15 @@ class _SiumState extends State<Sium> {
           ),
         ),
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 30),
           child: FlatButton(
             padding: EdgeInsets.all(20),
-            color: Color(0xFFF5F6F9),
+            color: Colors.grey[500],
+            height: 30,
             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
             onPressed: () {},
-            child: Row(
-              children: [
-
-              ],
+            child: Text(
+              "SEGUI"
             ),
           ),
         ),
