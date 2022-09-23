@@ -44,7 +44,7 @@ class _MyPackageState extends State<MyPackage> {
         ),
         body: screens[currentIndex],
         bottomNavigationBar: BottomNavyBar(
-          backgroundColor: Colors.black,
+          backgroundColor: Colors.black87,
           selectedIndex: currentIndex,
           onItemSelected: (index){
             setState(() {
