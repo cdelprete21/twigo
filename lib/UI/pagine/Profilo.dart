@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:Twigo/UI/pagine/cd.dart';
+import 'package:Twigo/UI/pagine/merch.dart';
+import 'package:Twigo/UI/pagine/ticket.dart';
+import 'package:Twigo/UI/pagine/nft.dart';
+import 'package:Twigo/UI/pagine/info.dart';
 
 class Profilo extends StatefulWidget {
   const Profilo({ Key? key }) : super(key: key);
@@ -27,73 +32,99 @@ class Sium extends StatefulWidget {
   State<Sium> createState() => _SiumState();
 }
 
-class _SiumState extends State<Sium> {
-  @override
+class _SiumState extends State<Sium> with SingleTickerProviderStateMixin{
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 20),
-      child: Column(
-        children: [
-          CircleAvatar(
-            radius: 76,
-            backgroundColor: Colors.orange,
-            child: CircleAvatar(
-              radius: 75,
-              backgroundImage: AssetImage("assets/leD3.png"),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 150, vertical: 10),
-            child: FlatButton(
-              color: Colors.orange,
-              height: 30,
-              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
-              onPressed: () {},
-              child: Text(
-                "SEGUI",
-                style: TextStyle(
-                  color: Colors.white,
-                ),
+    return DefaultTabController(
+      length: 5,
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 20),
+        child: Column(
+          children: [
+            CircleAvatar(
+              radius: 71,
+              backgroundColor: Colors.orange,
+              child: CircleAvatar(
+                radius: 70,
+                backgroundImage: AssetImage("assets/leD3.png"),
               ),
             ),
-          ),
-          TabBar(
-            tabs: [
-              Tab(
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 150, vertical: 10),
+              child: FlatButton(
+                color: Colors.orange,
+                height: 30,
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+                onPressed: () {},
                 child: Text(
-                  "ciao",
+                  "SEGUI",
                   style: TextStyle(
                     color: Colors.white,
                   ),
                 ),
               ),
-              Tab(
-                child: Text(
-                  "ciao",
-                  style: TextStyle(
-                    color: Colors.white,
-                  ),
+            ),
+            TabBar(
+              tabs: [
+                Tab(
+                  child: Text(
+                      'CD',
+                      style: TextStyle(
+                        fontSize: 12,
+                        color: Colors.white70,
+                      ),
+                    ),
                 ),
-              ),
-              Tab(
-                child: Text(
-                  "ciao",
-                  style: TextStyle(
-                    color: Colors.white,
-                  ),
+                Tab(
+                  child: Text(
+                      'MERCH',
+                      style: TextStyle(
+                        fontSize: 12,
+                        color: Colors.white70,
+                      ),
+                    ),
                 ),
-              ),
-              Tab(
-                child: Text(
-                  "ciao",
-                  style: TextStyle(
-                    color: Colors.white,
-                  ),
+                Tab(
+                  child: Text(
+                      'TICKET',
+                      style: TextStyle(
+                        fontSize: 12,
+                        color: Colors.white70,
+                      ),
+                    ),
                 ),
+                Tab(
+                  child: Text(
+                      'NFT',
+                      style: TextStyle(
+                        fontSize: 12,
+                        color: Colors.white70,
+                      ),
+                    ),
+                ),
+                Tab(
+                  child: Text(
+                      'INFO',
+                      style: TextStyle(
+                        fontSize: 12,
+                        color: Colors.white70,
+                      ),
+                    ),
+                ),
+              ],
+            ),
+            Expanded(
+              child: TabBarView(
+                children: [
+                  cd(),
+                  merch(),
+                  ticket(),
+                  nft(),
+                  info(),
+                ],
               ),
-            ],
-          ),
-        ], 
+            ),
+          ], 
+        ),
       ),
     );
   }

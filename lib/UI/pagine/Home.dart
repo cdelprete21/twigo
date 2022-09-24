@@ -35,7 +35,7 @@ class _SiumState extends State<Sium> {
         Padding(
           padding: const EdgeInsets.all(8.0),
           child: Container(
-            height: 200,
+            height: 180,
             width: 400,
             decoration: BoxDecoration(
               color: Colors.grey[800],
@@ -70,7 +70,7 @@ class _SiumState extends State<Sium> {
         Padding(
           padding: const EdgeInsets.all(8.0),
           child: Container(
-            height: 200,
+            height: 180,
             width: 400,
             decoration: BoxDecoration(
               color: Colors.grey[800],
@@ -105,7 +105,7 @@ class _SiumState extends State<Sium> {
         Padding(
           padding: const EdgeInsets.all(8.0),
           child: Container(
-            height: 200,
+            height: 180,
             width: 400,
             decoration: BoxDecoration(
               color: Colors.grey[800],
