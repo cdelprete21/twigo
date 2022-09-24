@@ -5,15 +5,46 @@ class ticket extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GridView.builder(
-      itemCount: 3,
-      gridDelegate: 
-          SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
+    return ListView.builder(
+      itemCount: 2,
+      //ListDelegate: 
+         // SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
       itemBuilder: (context, index) {
         return Padding(
-          padding: const EdgeInsets.all(2.0),
-          child: Container(
-            color: Colors.red[100],
+          padding: const EdgeInsets.fromLTRB(10, 5, 10, 50),
+          child: Align(
+            heightFactor: 0.7,
+            alignment: Alignment.topLeft,
+            child: Padding(
+              padding: const EdgeInsets.all(2.0),
+              child: Container(
+                  height: 140,
+                  width: 140,
+                  child: Padding(
+                    padding: const EdgeInsets.fromLTRB(0,20,15,0),
+                    child: CircleAvatar(
+                      backgroundColor: Colors.transparent,
+                      backgroundImage: AssetImage('assets/ticket.png'),
+                    ),
+                  ),
+                decoration: BoxDecoration(
+                  color: Colors.black,
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey.shade800,
+                      spreadRadius: 3,
+                      blurRadius: 7,
+                      offset: Offset(5.0, 6.0),
+                    ),
+                  ],
+                  border: Border.all(
+                    color: Colors.white,
+                    width: 0.5,
+                  ),
+                  borderRadius: BorderRadius.circular(10)
+                ),
+              ),
+            ),
           ),
         );
       }
