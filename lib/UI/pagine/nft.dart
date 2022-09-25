@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 class nft extends StatelessWidget {
   final List<String> data = [
-    'one',
-    'two',
-    'three',
+    'NFT 1',
+    'NFT 2',
+    'NFT 3',
   ];
 
   final List imglst = [
@@ -32,13 +32,6 @@ class nft extends StatelessWidget {
                     top: 10,
                     left: 20,
                     child: Material(
-                      child: Container(
-                        height: 150.0,
-                        width: 150.0,
-                        decoration: BoxDecoration(
-                          color: Colors.grey[800],
-                        ),
-                      ),
                     ),
                   ),
                   Positioned(
@@ -51,15 +44,16 @@ class nft extends StatelessWidget {
                         borderRadius: BorderRadius.circular(5.0),
                       ),
                       child: Container(
-                        height: 150,
-                        width: 150,
+                        height: 140,
+                        width: 140,
                         decoration: BoxDecoration(
-                          color: Colors.grey[800],
+                          color: Colors.grey[900],
                           borderRadius: BorderRadius.circular(5.0),
                           image: DecorationImage(
                             fit: BoxFit.fill,
-                            image: AssetImage("assets/cd.png"),
-                          )
+                            image: AssetImage("assets/nft.png"),
+                            scale: 2,
+                          ),
                         ),
                       ),
                     ),
@@ -74,7 +68,7 @@ class nft extends StatelessWidget {
                         children: [
                           Text(data[index],
                             style: TextStyle(
-                              fontSize: 20,
+                              fontSize: 25,
                               color: Colors.black,
                             ),
                           ),
