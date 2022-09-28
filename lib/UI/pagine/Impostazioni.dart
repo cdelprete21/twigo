@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Impostazioni extends StatefulWidget {
@@ -68,14 +69,60 @@ class _ImpostazioniState extends State<Impostazioni> {
               height: 15,
               thickness: 2,
             ),
-            buildAccountOptionRow(context, "Email"),
-            buildAccountOptionRow(context, "Nome"),
-            buildAccountOptionRow(context, "Password"),
-            buildAccountOptionRow(context, "Privacy & Security"),
+            SizedBox(
+              height: 10,
+            ),
+            buildNotificationOptionRow("Suoneria", true),
+            buildNotificationOptionRow("Vibrazione", false),
+            buildAccountOptionRow(context, "Priorità notifiche"),
+            SizedBox(
+              height: 50,
+            ),
+            Center(
+                child: RaisedButton(
+                  color: Colors.grey[900],
+                  shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20),  
+                ),
+                  child: Text(
+                    "SIGN OUT",
+                    style: TextStyle(
+                      fontSize: 16,
+                      color: Colors.grey[600],
+                      letterSpacing: 2.2,
+                      
+                    ),
+                  ),
+                  onPressed: () {},
+                ),
+            ),
           ],
         ),
       ),
     );
+  }
+
+  Row buildNotificationOptionRow(String title, bool isActive) {
+    return Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text(
+                title,
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.w500,
+                  color: Colors.grey[600],
+                ),
+              ),
+              Transform.scale(
+                scale: 0.7,
+                child: CupertinoSwitch(
+                  value: isActive,
+                  onChanged: (bool val) {},
+                ),
+              ),
+            ],
+          );
   }
 
   GestureDetector buildAccountOptionRow(BuildContext context, String title) {
