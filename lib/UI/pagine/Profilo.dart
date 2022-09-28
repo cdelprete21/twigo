@@ -34,6 +34,10 @@ class Sium extends StatefulWidget {
 
 class _SiumState extends State<Sium> with SingleTickerProviderStateMixin{
   Widget build(BuildContext context) {
+
+    final ButtonStyle style =
+        ElevatedButton.styleFrom(textStyle: const TextStyle(fontSize: 20));
+
     return DefaultTabController(
       length: 5,
       child: Padding(
@@ -50,18 +54,19 @@ class _SiumState extends State<Sium> with SingleTickerProviderStateMixin{
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 150, vertical: 10),
-              child: FlatButton(
-                color: Colors.orange,
-                height: 30,
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
-                onPressed: () {},
-                child: Text(
-                  "SEGUI",
-                  style: TextStyle(
-                    color: Colors.white,
+              child: ElevatedButton(
+                  style: style,
+                  onPressed: () {},
+                  child: Text(
+                    "SIGN OUT",
+                    style: TextStyle(
+                      fontSize: 16,
+                      color: Colors.grey[600],
+                      letterSpacing: 2.2,
+                      
+                    ),
                   ),
                 ),
-              ),
             ),
             TabBar(
               tabs: [

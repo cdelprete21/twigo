@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "380463750260",
-    "project_id": "twigo-46dc3",
-    "storage_bucket": "twigo-46dc3.appspot.com"
+    "project_number": "856503874765",
+    "project_id": "twigo-576f0",
+    "storage_bucket": "twigo-576f0.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:380463750260:android:d1791c689f04afadde0521",
+        "mobilesdk_app_id": "1:856503874765:android:ed43c4b9a362911bf3e584",
         "android_client_info": {
           "package_name": "com.example.twigo"
         }
       },
       "oauth_client": [
         {
-          "client_id": "380463750260-toa9g5temd3750o2e0iqrv1lch7p74a5.apps.googleusercontent.com",
+          "client_id": "856503874765-cherjm37fkicod2te3a5rqsamogs8ckc.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyChi6FnViIQyH7YUc9NZaW6DG-P4KbBTVI"
+          "current_key": "AIzaSyBzJKgv4q6Vcd0QrmFkGcUteLlmZa41qX8"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "380463750260-toa9g5temd3750o2e0iqrv1lch7p74a5.apps.googleusercontent.com",
+              "client_id": "856503874765-cherjm37fkicod2te3a5rqsamogs8ckc.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

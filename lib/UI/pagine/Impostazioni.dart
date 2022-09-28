@@ -11,6 +11,10 @@ class Impostazioni extends StatefulWidget {
 class _ImpostazioniState extends State<Impostazioni> {
   @override
   Widget build(BuildContext context) {
+
+    final ButtonStyle style =
+        ElevatedButton.styleFrom(textStyle: const TextStyle(fontSize: 20));
+
     return Container(
       color: Colors.black,
       padding: EdgeInsets.only(left: 16, top: 25, right: 16),
@@ -79,11 +83,9 @@ class _ImpostazioniState extends State<Impostazioni> {
               height: 50,
             ),
             Center(
-                child: RaisedButton(
-                  color: Colors.grey[900],
-                  shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(20),  
-                ),
+                child: ElevatedButton(
+                  style: style,
+                  onPressed: () {},
                   child: Text(
                     "SIGN OUT",
                     style: TextStyle(
@@ -93,9 +95,8 @@ class _ImpostazioniState extends State<Impostazioni> {
                       
                     ),
                   ),
-                  onPressed: () {},
                 ),
-            ),
+                ),
           ],
         ),
       ),
@@ -141,7 +142,7 @@ class _ImpostazioniState extends State<Impostazioni> {
                     ],
                   ),
                   actions: [
-                    FlatButton(
+                    TextButton(
                       onPressed: (){
                         Navigator.of(context).pop();
                       },
