@@ -11,9 +11,7 @@ class _LinkPageState extends State<LinkPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Link'),
-      ),
+      backgroundColor: Colors.black,
     );
   }
 }
