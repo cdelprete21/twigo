@@ -65,7 +65,7 @@ class _ProdottiState extends State<Prodotti> {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.fromLTRB(8, 35, 8, 8),
+                  padding: const EdgeInsets.fromLTRB(8, 25, 8, 8),
                   child: Text(
                     'Descrizione',
                     style: TextStyle(
@@ -86,7 +86,7 @@ class _ProdottiState extends State<Prodotti> {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.fromLTRB(8, 35, 8, 8),
+                  padding: const EdgeInsets.fromLTRB(8, 25, 8, 8),
                   child: Text(
                     'Sesso',
                     style: TextStyle(
@@ -169,7 +169,7 @@ class _ProdottiState extends State<Prodotti> {
                   controlAffinity: ListTileControlAffinity.leading,
                 ),
                 Padding(
-                  padding: const EdgeInsets.fromLTRB(8, 35, 8, 8),
+                  padding: const EdgeInsets.fromLTRB(8, 20, 8, 8),
                   child: Text(
                     'Prezzo',
                     style: TextStyle(

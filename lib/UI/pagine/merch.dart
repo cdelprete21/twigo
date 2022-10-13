@@ -2,6 +2,11 @@ import 'package:flutter/material.dart';
 
 class merch extends StatelessWidget {
   final List<String> userPosts = [];
+  final List<String> data = [
+    'Merch 1',
+    'Merch 2',
+    'Merch 3',
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -10,42 +15,56 @@ class merch extends StatelessWidget {
       //ListDelegate: 
          // SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
       itemBuilder: (context, index) {
-        return Padding(
-          padding: const EdgeInsets.fromLTRB(10, 5, 10, 50),
-          child: Align(
-            heightFactor: 0.7,
-            alignment: Alignment.topLeft,
-            child: Padding(
-              padding: const EdgeInsets.all(2.0),
-              child: Container(
-                  height: 140,
-                  width: 140,
-                  child: Padding(
-                    padding: const EdgeInsets.fromLTRB(10,0,10,10),
-                    child: CircleAvatar(
-                      backgroundColor: Colors.transparent,
-                      backgroundImage: AssetImage('assets/tshirt.png'),
+        return Row(
+          children: [
+            Padding(
+              padding: const EdgeInsets.fromLTRB(10, 5, 10, 50),
+              child: Align(
+                heightFactor: 0.7,
+                alignment: Alignment.topLeft,
+                child: Padding(
+                  padding: const EdgeInsets.all(2.0),
+                  child: Container(
+                      height: 140,
+                      width: 140,
+                      child: Padding(
+                        padding: const EdgeInsets.fromLTRB(10,0,10,10),
+                        child: CircleAvatar(
+                          backgroundColor: Colors.transparent,
+                          backgroundImage: AssetImage('assets/tshirt.png'),
+                        ),
+                      ),
+                    decoration: BoxDecoration(
+                      color: Colors.black,
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey.shade800,
+                          spreadRadius: 3,
+                          blurRadius: 7,
+                          offset: Offset(5.0, 6.0),
+                        ),
+                      ],
+                      border: Border.all(
+                        color: Colors.white,
+                        width: 0.5,
+                      ),
+                      borderRadius: BorderRadius.circular(10)
                     ),
                   ),
-                decoration: BoxDecoration(
-                  color: Colors.black,
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.grey.shade800,
-                      spreadRadius: 3,
-                      blurRadius: 7,
-                      offset: Offset(5.0, 6.0),
-                    ),
-                  ],
-                  border: Border.all(
-                    color: Colors.white,
-                    width: 0.5,
-                  ),
-                  borderRadius: BorderRadius.circular(10)
                 ),
               ),
             ),
-          ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 30),
+              child: Text(
+                      data[index],
+                      style: TextStyle(
+                                fontSize: 24,
+                                color: Colors.white,
+                              ),
+                      ),
+            ),
+          ],
         );
       }
     );
