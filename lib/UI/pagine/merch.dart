@@ -5,13 +5,13 @@ class merch extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GridView.builder(
-      itemCount: 4,
-      gridDelegate: 
-         SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
+    return ListView.builder(
+      itemCount: 3,
+      //ListDelegate: 
+         // SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
       itemBuilder: (context, index) {
         return Padding(
-          padding: const EdgeInsets.all(2.0),
+          padding: const EdgeInsets.fromLTRB(10, 5, 10, 50),
           child: Align(
             heightFactor: 0.7,
             alignment: Alignment.topLeft,

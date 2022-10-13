@@ -53,20 +53,15 @@ class _SiumState extends State<Sium> with SingleTickerProviderStateMixin{
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 150, vertical: 10),
-              child: ElevatedButton(
-                  style: style,
-                  onPressed: () {},
+              padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 20),
                   child: Text(
-                    "SIGN OUT",
+                    "Nome utente",
                     style: TextStyle(
                       fontSize: 16,
                       color: Colors.grey[600],
                       letterSpacing: 2.2,
-                      
                     ),
                   ),
-                ),
             ),
             TabBar(
               tabs: [

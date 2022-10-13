@@ -6,11 +6,11 @@ import 'package:Twigo/UI/pagine/LinkPage.dart';
 import 'package:Twigo/UI/pagine/Prodotti.dart';
 import 'package:Twigo/UI/pagine/Home.dart';
 import 'package:bottom_navy_bar/bottom_navy_bar.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 class MyPackage extends StatefulWidget {
-  const MyPackage({ Key? key }) : super(key: key);
-
+   MyPackage({ Key? key }) : super(key: key);
   @override
   State<MyPackage> createState() => _MyPackageState();
 }

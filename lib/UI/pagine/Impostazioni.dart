@@ -3,18 +3,12 @@ import 'package:flutter/material.dart';
 
 class Impostazioni extends StatefulWidget {
   const Impostazioni({ Key? key }) : super(key: key);
-
   @override
   State<Impostazioni> createState() => _ImpostazioniState();
 }
-
 class _ImpostazioniState extends State<Impostazioni> {
   @override
   Widget build(BuildContext context) {
-
-    final ButtonStyle style =
-        ElevatedButton.styleFrom(textStyle: const TextStyle(fontSize: 20));
-
     return Container(
       color: Colors.black,
       padding: EdgeInsets.only(left: 16, top: 25, right: 16),
@@ -73,6 +67,10 @@ class _ImpostazioniState extends State<Impostazioni> {
               height: 15,
               thickness: 2,
             ),
+            buildAccountOptionRow(context, "Email"),
+            buildAccountOptionRow(context, "Nome"),
+            buildAccountOptionRow(context, "Password"),
+            buildAccountOptionRow(context, "Privacy & Security"),
             SizedBox(
               height: 10,
             ),
@@ -80,23 +78,25 @@ class _ImpostazioniState extends State<Impostazioni> {
             buildNotificationOptionRow("Vibrazione", false),
             buildAccountOptionRow(context, "Priorità notifiche"),
             SizedBox(
-              height: 50,
+              height: 25,
             ),
             Center(
-                child: ElevatedButton(
-                  style: style,
-                  onPressed: () {},
+                child: TextButton(
+                  style: ButtonStyle(
+                  foregroundColor: MaterialStateProperty.all<Color>(Colors.grey),
+                ),
                   child: Text(
                     "SIGN OUT",
                     style: TextStyle(
                       fontSize: 16,
                       color: Colors.grey[600],
                       letterSpacing: 2.2,
-                      
+
                     ),
                   ),
+                  onPressed: () {},
                 ),
-                ),
+            ),
           ],
         ),
       ),
