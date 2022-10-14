@@ -67,13 +67,6 @@ class _ImpostazioniState extends State<Impostazioni> {
               height: 15,
               thickness: 2,
             ),
-            buildAccountOptionRow(context, "Email"),
-            buildAccountOptionRow(context, "Nome"),
-            buildAccountOptionRow(context, "Password"),
-            buildAccountOptionRow(context, "Privacy & Security"),
-            SizedBox(
-              height: 10,
-            ),
             buildNotificationOptionRow("Suoneria", true),
             buildNotificationOptionRow("Vibrazione", false),
             buildAccountOptionRow(context, "Priorità notifiche"),
